@@ -44,6 +44,7 @@ public class TestCase3 {
 
         //6. Then click on �EMPTY CART� link in the footer of list of all mobiles. A message "SHOPPING CART IS EMPTY" is shown.
         //7. Verify cart is empty
-
+        
+        driver.quit();
     }
 }
