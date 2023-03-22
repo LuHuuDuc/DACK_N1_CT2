@@ -106,6 +106,8 @@ public class TestCase8 {
         Thread.sleep(9000);
         File screenshotFile2 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(screenshotFile2, new File("src/test/java/img/testcase8_verifyOrder.png"));
+        
+        driver.quit();
 
     }
 }
