@@ -1,0 +1,315 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Cloners),Outward issue link (Cloners),Custom field (Actual Result),Custom field (Actual end),Custom field (Actual start),Custom field (Category),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Compass),Custom field (Development),Custom field (Epic Color),Custom field (Epic Link),Epic Link Summary,Custom field (Epic Name),Custom field (Epic Status),Custom field (Expected Result),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Rank),Custom field (Request Type),Sprint,Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Test Level),Custom field (Test Steps),Custom field (Testcase Result),Custom field (Text Level),Custom field (Total forms),Custom field ([CHART] Date of First Response),Status Category
+"SCLG17 –Verify Register – Verify that clicking on submit button after entering all the mandatory fields, submit the data to the server",NC-101,10333,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 1:43 PM,08/Jan/23 2:08 PM,22/Mar/23 4:59 PM,,,0,Login," Verify that clicking on submit button after entering all the mandatory fields, submit the data to the server",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,DATA TO THE SERVER,,,,,,,,,,NC-27,Login,,,DATA TO THE SERVER,,,,,0|i001yf:,,,,,,,,,,Integration,Enter data into the submit buttons,Pass,,,,To Do
+"SCLG16 – Verify Login - If the user has signed up with Facebook or social media, verify that the user can log in with those credentials or not.
+",NC-100,10332,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 1:23 PM,08/Jan/23 2:08 PM,22/Mar/23 4:59 PM,,,0,Login," If the user has signed up with Facebook or social media, verify that the user can log in with those credentials or not.
+
+Users who use the social network facebook",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Logged in successfully,,,,,,,,,,NC-27,Login,,,Logged in successfully,,,,,0|i001y7:,,,,,,,,,,Integration,Enter the email and password of the user who uses the social network facebook,Pass,,,,To Do
+SCLG15 – Verify Login - Verify if a user is able to login with a new password only after he/she has changed the password.,NC-99,10331,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 1:21 PM,08/Jan/23 1:43 PM,22/Mar/23 4:59 PM,,,0,Login,"Verify if a user is able to login with a new password only after he/she has changed the password.
+
+Enter  email register = ‘phamphuctoan2003434@gmail.com’
+
+Enter password change='0383807250'",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Logged in successfully,,,,,,,,,,NC-27,Login,,,Logged in successfully,,,,,0|i001xz:,,,,,,,,,,Integration,Enter email and  password change  in login page,Pass,,,,To Do
+SCLG14 – Verify Login - Verify if a user will be able to login with a valid username and valid password.,NC-98,10330,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 1:17 PM,08/Jan/23 1:21 PM,22/Mar/23 4:59 PM,,,0,Login,"Verify if a user will be able to login with a valid username and valid password.
+
+Enter  email register = ‘phamphuctoan2003434@gmail.com’
+
+Enter password   register ='123456789'",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Logged in successfully,,,,,,,,,,NC-27,Login,,,Logged in successfully,,,,,0|i001xr:,,NC Sprint 1,,,,,,,,Integration,Enter email and password  resgister in login page,Pass,,,,To Do
+SCLG13 – Verify Login – Verify if email  cannot login with a valid username and an invalid password.,NC-97,10329,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 1:12 PM,08/Jan/23 1:20 PM,22/Mar/23 4:59 PM,,,0,Login,"Verify if a user cannot login with a valid username and an invalid password.
+
+Enter  email no register = ‘fsdfs2003sss@gmail.com’
+
+Enter password no register ='0383802557'",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Login unsuccessful,,,,,,,,,,NC-27,Login,,,Login unsuccessful,,,,,0|i001xj:,,NC Sprint 1,,,,,,,,Integration,Enter email and password no resgister in login page,Pass,,,,To Do
+"SCLG12 – Verify Login, Register - Verify that tab functionality is working properly or not",NC-96,10328,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 1:03 PM,08/Jan/23 1:17 PM,22/Mar/23 4:59 PM,,,0,Login,"Verify Login, Register - Verify that tab functionality is working properly or not
+
+Proceed to login",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Tabs work normally,,,,,,,,,,NC-27,Login,,,Tabs work normally,,,,,0|i001xb:,,NC Sprint 1,,,,,,,,Integration,After registration progress click on test tabs,Pass,,,,To Do
+"SCLG11 –Verify Login, Register - Verify if the 'Enter' key of the keyboard is working correctly on the login page",NC-95,10327,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 12:59 PM,08/Jan/23 1:12 PM,22/Mar/23 4:59 PM,,,0,Login,"Verify if the 'Enter' key of the keyboard is working correctly on the login page
+
+Enter information  :
+
+email = 'phamphuctoan2003434@gmail.com
+
+password='123456789'",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Logged in successfully,,,,,,,,,,NC-27,Login,,,Logged in successfully,,,,,0|i001x3:,,NC Sprint 1,,,,,,,,Integration,"Enter information  :
+ 1.email = 'phamphuctoan2003434@gmail.com
+2.password='123456789'
+3. press enter key",Pass,,,,To Do
+"SCLG10 –Verify Register, Login – If the registration is successful, you must log in successfully",NC-94,10326,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 12:55 PM,08/Jan/23 1:03 PM,22/Mar/23 4:59 PM,,,0,Login,"If the registration is successful, you must log in successfully
+
+Enter information according to registration information :
+
+ email = 'phamphuctoan2003434@gmail.com
+
+password='123456789'",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Logged in successfully,,,,,,,,,,NC-27,Login,,,Logged in successfully,,,,,0|i001wv:,,NC Sprint 1,,,,,,,,Integration,Enter the content in password Login,Pass,,,,To Do
+"IPLG09–  Verify Password login – If password login is invalid, System displays an error",NC-93,10325,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 12:47 PM,08/Jan/23 12:58 PM,22/Mar/23 4:59 PM,,,0,Login,"If Login password is invalid, System displays an error
+
+Enter password Login = ‘124’",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,NC-92,Error display system,,,,,,,,,,NC-27,Login,,,Error display system,,,,,0|i001wn:,,NC Sprint 1,,,,,,,,Integration,Enter the content in password Login,Pass,,,,To Do
+"IPLG08–  Verify Email ID – If Email ID is invalid, System displays an error",NC-92,10324,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,08/Jan/23 12:39 PM,08/Jan/23 12:47 PM,22/Mar/23 4:59 PM,,,0,Login,"If Email ID is invalid, System displays an error
+
+Enter Email Login = ‘[phamphuctoan2003434.com|http://phamphuctoan2003434.com]’",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,NC-93,,Error display system,,,,,,,,,,NC-27,Login,,,Error display system,,,,,0|i001wf:,,NC Sprint 1,,,,,,,,Integration,Enter the content in Email Login,Pass,,,,To Do
+"SC – Verify Register, Login – If account creation is successful, use that account to login, the system will login successfully",NC-91,10323,Story,Done,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,Done,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,07/Jan/23 10:57 PM,07/Jan/23 11:05 PM,22/Mar/23 4:59 PM,07/Jan/23 11:05 PM,,0,Register,"If account creation is successful, use that account to login.
+
+Test data (Login):
+
+* FullName: VHP
+* Telephone Number: 0795183424
+* Email: 9a5vohongphuc@gmail.com
+* Password: 123456
+
+Test data (Register):
+
+* Email: [9a5vohongphuc@gmail.com|mailto:9a5vohongphuc@gmail.com]
+* Password: 123456",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- The system will login successfully,,,,,,,,,,NC-26,Register,,,- The system will login successfully,,,,,0|i001w7:,,NC Sprint 1,,,,,,,,System,"- After successfully creating an account with Test data (Login), enter content of Test data(Register) in Register Module.
+- Click Submit",Pass,,,,Done
+LG33 – Verify Password - Sequence of characters in a variety of keyboards,NC-86,10318,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:36 PM,06/Jan/23 11:00 PM,22/Mar/23 4:59 PM,,,0,Login,"Sequence of characters in a variety of keyboards
+
+Test data:
+
+* “aaaaaaaaaaa“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message ""Sequence of characters in a variety of keyboards"" must shown",,,,,0|i001vr:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Password Field,Fail,,,,To Do
+LG32 – Verify Password - Characters cannot be repeated too much,NC-85,10317,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:35 PM,06/Jan/23 10:58 PM,06/Jan/23 11:48 PM,,,0,Login,"Characters cannot be repeated too much
+
+Test data:
+
+* “aaaaaaaaaa“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message ""Characters cannot be repeated too much"" must shown",,,,,0|i001vj:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Password Field,Fail,,,,To Do
+LG31 – Verify Password - Password must be hidden the interface.,NC-84,10316,Story,Done,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,Done,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:35 PM,06/Jan/23 10:56 PM,22/Mar/23 4:59 PM,06/Jan/23 10:56 PM,,0,Login,Password must be hidden the interface.,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,"- An error message "" Password must be hidden the interface."" is shown",,,,,,,,,,NC-27,Login,,,"- An error message "" Password must be hidden the interface."" must shown",,,,,0|i001vb:,,NC Sprint 1,,,,,,,,Unit,- Click Hide button,Pass,,,,Done
+LG30 – Verify Password - Passwords must be between 8 and 20 digits,NC-83,10315,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:35 PM,06/Jan/23 10:54 PM,22/Mar/23 4:59 PM,,,0,Login,"Passwords must be between 8 and 20 digits
+
+Test data:
+
+* “abc123@“
+* “abcd123456789101213@#$“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message "" Passwords must be between 8 and 20 digits"" must shown",,,,,0|i001v3:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Password Field,Fail,,,,To Do
+LG29 – Verify Password - Confirm Password must not be blank,NC-82,10314,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:34 PM,06/Jan/23 10:54 PM,22/Mar/23 4:59 PM,,,0,Login,Confirm Password must not be blank,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error.,,,,,,,,,,NC-27,Login,,,"- An error message "" Confirm Password must not be blank"" must shown",,,,,0|i001uv:,,NC Sprint 1,,,,,,,,Unit,- Don't enter anything in Password Field,Fail,,,,To Do
+LG28 – Verify Password - Choose a difficult Password,NC-81,10313,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:34 PM,06/Jan/23 10:50 PM,22/Mar/23 4:59 PM,,,0,Login,"Choose a difficult Password
+
+Test data:
+
+* “123456“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message "" Choose a difficult Password"" must shown",,,,,0|i001un:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Password Field,Fail,,,,To Do
+LG27 – Verify Password - Enter at-least one special character,NC-80,10312,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:34 PM,06/Jan/23 10:43 PM,22/Mar/23 4:59 PM,,,0,Login,"Enter at-least one special character
+
+Test data:
+
+* “abc123“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message ""Enter at-least one special character"" must shown",,,,,0|i001uf:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Password Field,Fail,,,,To Do
+LG26 – Verify Password - Enter at-least one numeric value,NC-79,10311,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:34 PM,06/Jan/23 10:42 PM,22/Mar/23 4:59 PM,,,0,Login,"Enter at-least one numeric value
+
+Test data:
+
+* “abc@#$“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message ""Enter at-least one numeric value"" must shown",,,,,0|i001u7:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Password Field,Fail,,,,To Do
+LG25 – Verify Password - Password must not be blank,NC-78,10310,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:33 PM,06/Jan/23 10:39 PM,22/Mar/23 4:59 PM,,,0,Login,Password must not be blank,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message ""Password must not be blank"" must shown",,,,,0|i001tz:,,NC Sprint 1,,,,,,,,Unit,- Don't enter anything in Password Field,Fail,,,,To Do
+LG24 – Verify Email – First character can not have space,NC-77,10309,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:32 PM,06/Jan/23 10:37 PM,22/Mar/23 4:59 PM,,,0,Login,"First character can not have space
+
+Test data:
+
+* “ “",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message ""First character can not have space"" must shown",,,,,0|i001tr:,,NC Sprint 1,,,,,,,,Unit,- Enter content of test data in Email Field,Fail,,,,To Do
+LG23 – Verify Email – Email no must not be blank,NC-76,10308,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:30 PM,06/Jan/23 10:40 PM,22/Mar/23 4:59 PM,,,0,Login,Email no must not be blank,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-27,Login,,,"- An error message ""Email no must not be blank"" must shown",,,,,0|i001tj:,,NC Sprint 1,,,,,,,,Unit,- Don't enter anything in Email Field,Fail,,,,To Do
+RG19 – Verify Password - Sequence of characters in a variety of keyboards,NC-75,10307,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 10:02 PM,06/Jan/23 10:24 PM,22/Mar/23 4:59 PM,,,0,Register,"Passwords do not Match
+
+Test data:
+
+* “qwe“
+* “zxcv“
+* “asdf“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Sequence of characters in a variety of keyboards"" must shown",,,,,0|i001tb:,,NC Sprint 1,,,,,,,,Unit,- Enter content of test data in Password Field,Fail,,,,To Do
+RG16 – Verify Password - Enter at-least one special character,NC-74,10306,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 9:54 PM,06/Jan/23 9:57 PM,22/Mar/23 4:59 PM,,,0,Register,"Enter at-least one special character
+
+Test data:
+
+* “abc123“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Enter at-least one special character"" must shown",,,,,0|i001t3:,,NC Sprint 1,,,,,,,,Unit,- Enter content of test data in Password Field,Fail,,,,To Do
+RG06 – Verify Number Phone - Characters are not allowed.,NC-73,10305,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 9:25 PM,06/Jan/23 10:13 PM,22/Mar/23 4:59 PM,,,0,Register,"Characters are not allowed.
+
+Test data:
+
+* “abc“ ",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error ,,,,,,,,,,NC-26,Register,,,"- An error message ""Characters are not allowed"" must shown",,,,,0|i001sv:,,NC Sprint 1,,,,,,,,Unit,- Enter content of Test data in Number Phone Field,Fail,,,,To Do
+RG22 - Verify Password - Characters cannot be repeated too much,NC-72,10304,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 9:03 PM,06/Jan/23 10:26 PM,22/Mar/23 4:59 PM,,,0,Register,"Characters cannot be repeated too much
+
+Test data:
+
+* “aaaaaaa“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Characters cannot be repeated too much"" must shown",,,,,0|i001sn:,,NC Sprint 1,,,,,,,,Unit,- Enter content of test data in Password Field,Fail,,,,To Do
+RG21 – Verify Password - Password must be hidden the interface,NC-71,10303,Story,Done,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,Done,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 9:01 PM,06/Jan/23 10:09 PM,22/Mar/23 4:59 PM,06/Jan/23 10:09 PM,,0,Register,Password must be hidden the interface,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,"- An error message ""Password must be hidden the interface"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""Password must be hidden the interface"" must shown",,,,,0|i001sf:,,NC Sprint 1,,,,,,,,Unit,- Click button similar to Hide.,Pass,,,,Done
+RG20 – Verify Password - Passwords must be between 8 and 20 digits,NC-70,10302,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 9:01 PM,06/Jan/23 10:08 PM,22/Mar/23 4:59 PM,,,0,Register,"Passwords must be between 8 and 20 digits
+
+Test data:
+
+* “abc123@”
+* “abc12345678901112131415@#$“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Passwords must be between 8 and 20 digits"" must shown",,,,,0|i001s7:,,NC Sprint 1,,,,,,,,Unit,- Enter content of test data in Password Field,Fail,,,,To Do
+RG18 – Verify Password - Confirm Password must not be blank,NC-69,10301,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 9:00 PM,06/Jan/23 10:01 PM,22/Mar/23 4:59 PM,,,0,Register,Confirm Password must not be blank,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error.,,,,,,,,,,NC-26,Register,,,"- An error message ""Confirm Password must not be blank"" must shown",,,,,0|i001rz:,,NC Sprint 1,,,,,,,,Unit,- Don't enter anything in Password Field,Fail,,,,To Do
+RG17 – Verify Password - Choose a difficult Password,NC-68,10300,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 9:00 PM,06/Jan/23 9:59 PM,22/Mar/23 4:59 PM,,,0,Register,"Choose a difficult Password
+
+Test data:
+
+* “123456”",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Choose a difficult Password"" must shown",,,,,0|i001rr:,,NC Sprint 1,,,,,,,,Unit,- Enter of Test Data in Password Field,Fail,,,,To Do
+RG15 – Verify Password - Enter at-least one numeric value,NC-67,10299,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:56 PM,06/Jan/23 9:53 PM,22/Mar/23 4:59 PM,,,0,Register,"Enter at-least one numeric value
+
+Test data:
+
+“abc@#$“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Enter at-least one numeric value"" must shown",,,,,0|i001rj:,,NC Sprint 1,,,,,,,,Unit,- Enter of Test Data in Password Field,Fail,,,,To Do
+RG14 – Verify Password - Password must not be blank,NC-66,10298,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:54 PM,06/Jan/23 9:49 PM,22/Mar/23 4:59 PM,,,0,Register,Password must not be blank,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show Error.,,,,,,,,,,NC-26,Register,,,"- An error message ""Password must not be blank"" must shown",,,,,0|i001rb:,,NC Sprint 1,,,,,,,,Unit,- Don't enter anything in Password Field,Fail,,,,To Do
+RG13 – Verify Email – First character can not have space,NC-65,10297,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:53 PM,06/Jan/23 9:46 PM,22/Mar/23 4:59 PM,,,0,Register,"First character can not have space
+
+Test data:
+
+* “ “",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""First character can not have space"" must shown",,,,,0|i001r3:,,NC Sprint 1,,,,,,,,Unit,- Enter content of Test Data in Email Field,Fail,,,,To Do
+RG12 – Verify Email – Email ID is not valid,NC-64,10296,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:52 PM,06/Jan/23 10:18 PM,22/Mar/23 4:59 PM,,,0,Register,"Email ID is not valid
+
+Test data:
+
+* “@#$“
+* “123“
+* “abc123“
+* “abc@#$“
+* “abc@gmail“
+* “abc@“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Email ID is not valid"" must shown",,,,,0|i001qv:,,NC Sprint 1,,,,,,,,Unit,- Enter content of Test Data in Email Field,Fail,,,,To Do
+RG11 – Verify Email – Email no must not be blank,NC-63,10295,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:51 PM,06/Jan/23 10:16 PM,22/Mar/23 4:59 PM,,,0,Register,Email no must not be blank,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Email no must not be blank"" must shown",,,,,0|i001qn:,,NC Sprint 1,,,,,,,,Unit,"- Enter content of Test Data in Email Field
+- Submit",Fail,,,,To Do
+RG10 - Verify Number Phone – Phone number is not in the correct format,NC-62,10294,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:50 PM,06/Jan/23 10:16 PM,22/Mar/23 4:59 PM,,,0,Register,"Phone number is not in the correct format
+
+Test data:
+
+* “@#$“
+* “abc“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Phone number is not in the correct format"" must shown",,,,,0|i001qf:,,NC Sprint 1,,,,,,,,Unit,- Enter content of Test Data in Number Phone,Fail,,,,To Do
+RG09 – Verify Number Phone - Mobile no must not be blank,NC-61,10293,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:49 PM,06/Jan/23 10:15 PM,22/Mar/23 4:59 PM,,,0,Register,"Mobile no must not be blank
+
+Test data:
+
+* “ “",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Mobile no must not be blank"" must shown",,,,,0|i001q7:,,NC Sprint 1,,,,,,,,Unit,- Enter content of test data in Number Phone Field.,Fail,,,,To Do
+RG08 – Verify Number Phone - Phone number must be between 10 and 12 digits.,NC-60,10292,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:49 PM,06/Jan/23 10:14 PM,22/Mar/23 4:59 PM,,,0,Register,"Phone number must be between 10 and 12 digits.
+
+Test data:
+
+* “123456789”
+* “1234567891011“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Phone number must be between 10 and 12 digits."" must shown",,,,,0|i001pz:,,NC Sprint 1,,,,,,,,Unit,- Enter content of Test Data in Number Phone Field,Fail,,,,To Do
+RG07 – Verify Number Phone - First character can not have space.,NC-59,10291,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:48 PM,06/Jan/23 10:13 PM,22/Mar/23 4:59 PM,,,0,Register,"First character can not have space.
+
+Test data:
+
+* “ “",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""First character can not have space."" must shown",,,,,0|i001pr:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Number Phone Field,Fail,,,,To Do
+RG05 – Verify Number Phone - Special characters are not allowed.,NC-58,10290,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:48 PM,06/Jan/23 10:12 PM,22/Mar/23 4:59 PM,,,0,Register,"Special characters are not allowed.
+
+Test data:
+
+* “@#$“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error.,,,,,,,,,,NC-26,Register,,,"- An error message ""Special characters are not allowed."" must shown",,,,,0|i001pj:,,NC Sprint 1,,,,,,,,Unit,- Enter content of test data in Number Phone Field.,Fail,,,,To Do
+RG04 – Verify Full Name – Full Name no must not be blank,NC-57,10289,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:46 PM,06/Jan/23 10:11 PM,22/Mar/23 4:59 PM,,,0,Register,Full Name no must not be blank,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Full Name no must not be blank"" must shown",,,,,0|i001pb:,,NC Sprint 1,,,,,,,,Unit,- Don't enter anything in Full Name Field,Fail,,,,To Do
+RG03 – Verify Full Name - First character can not have space.,NC-56,10288,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:45 PM,06/Jan/23 9:14 PM,22/Mar/23 4:59 PM,,,0,Register,"First character can not have space.
+
+Test data: 
+
+* “ “",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""First character can not have space."" must shown",,,,,0|i001p3:,,NC Sprint 1,,,,,,,,Unit,- Enter content of test data in Full Name Field,Fail,,,,To Do
+RG02 – Verify Full Name - Numbers are not allowed.,NC-55,10287,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:44 PM,07/Jan/23 5:31 PM,22/Mar/23 4:59 PM,,,0,Register,"Numbers are not allowed.
+
+Test data:
+
+* “abc@#$“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Numbers are not allowed."" must shown",,,,,0|i001ov:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Full Name Field,Fail,,,,To Do
+RG01 – Verify Full Name - Special characters are not allowed.,NC-54,10286,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,06/Jan/23 8:43 PM,06/Jan/23 9:09 PM,19/Mar/23 9:30 PM,,,0,Register,"Special characters are not allowed.
+
+Test data:
+
+* “@#$“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,- Don't show error,,,,,,,,,,NC-26,Register,,,"- An error message ""Special character are not allowed"" must shown",,,,,0|i001on:,,NC Sprint 1,,,,,,,,Unit,- Enter content of data in Full Name Field,Fail,,,,To Do
+"SC-Verify Register  -    If the email is already registered, you will not be able to register again",NC-52,10284,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 1:51 PM,05/Jan/23 2:39 PM,22/Mar/23 4:59 PM,,,0,Register,"
+
+If the email is already registered, you will not be able to register again
+
+Test data:
+
+“phucv123o@gmail.com“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,"- An error message ""
+If your phone email has already been registered, you will not be able to register again"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""
+If your phone email has already been registered, you will not be able to register again"" must shown",,,,,0|i001of:,,NC Sprint 1,,,,,,,,System,"- Enter a value in Number field.
+- Submit
+- Continue Enter a value Number field
+- Submit",Pass,,,,To Do
+"SC-Verify Register  -   If your phone number has already been registered, you will not be able to register again",NC-51,10283,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 1:48 PM,05/Jan/23 2:41 PM,18/Mar/23 12:17 PM,,,0,Register,"{{Password must contain lowercase letters, uppercase special characters and numbers}}
+
+Test data:
+
+“0947598771“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,"- An error message ""
+If your phone number has already been registered, you will not be able to register again"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""
+If your phone number has already been registered, you will not be able to register again"" must shown",,,,,0|i001o7:,,NC Sprint 1,,,,,,,,System,"- Enter a value in Number field and enter all remaining fields
+- Submit
+- Continue Enter a value Number field
+- Submit",Pass,,,,To Do
+"SC-Verify Register  -  If Password must contain lowercase letters, uppercase special characters and numbers",NC-50,10282,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 1:16 PM,05/Jan/23 2:38 PM,18/Mar/23 12:16 PM,,,0,Register,"{{Password must contain lowercase letters, uppercase special characters and numbers}}
+
+Test data:
+
+“phucvo12@PP“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,NC-49,"
+You have successfully registered, please activate your account",,,,,,,,,,NC-26,Register,,,"- An error message ""
+Password must contain lowercase letters, uppercase special characters and numbers"" must shown",,,,,0|i001nz:,,NC Sprint 1,,,,,,,,System,- Enter a value in Email field.,Pass,,,,To Do
+SC-Verify Register  -   Email must have capital letters,NC-49,10281,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 12:14 PM,05/Jan/23 2:32 PM,22/Mar/23 4:59 PM,,,0,Register,"{{Email must have capital letters}}
+
+Test data:
+
+“phúcvõ123“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,NC-50,NC-47,"- An error message ""
+Email must have capital letters"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""
+Email must have capital letters"" must shown",,,,,0|i001nr:,,NC Sprint 1,,,,,,,,System,- Enter a value in Email field.,Pass,,,,To Do
+SC-Verify Register -   First and last name must be at least 40 characters,NC-47,10279,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 10:58 AM,05/Jan/23 2:27 PM,22/Mar/23 4:59 PM,,,0,Register,"First and last name must be at least 40 characters
+
+Test data:
+
+“phúcvõ“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,NC-49,NC-45,"- An error message ""
+First and last name must be at least 40 characters"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""
+First and last name must be at least 40 characters"" must shown",,,,,0|i001nb:,,NC Sprint 1,,,,,,,,System,- Enter a value in Fullname field.,Pass,,,,To Do
+SC-Verify Register -  First and last names cannot be accented,NC-45,10277,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 10:56 AM,05/Jan/23 2:26 PM,22/Mar/23 4:59 PM,,,0,Register,"
+
+First and last names cannot be accented
+
+Test data:
+
+“phúc“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,NC-47,NC-43,"- An error message ""
+First and last names cannot be accented"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""
+First and last names cannot be accented"" must shown",,,,,0|i001mv:,,NC Sprint 1,,,,,,,,System,- Enter a value in Fullname field.,Pass,,,,To Do
+SC-Verify Register - First and last name must be letters,NC-43,10275,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 10:53 AM,05/Jan/23 2:26 PM,22/Mar/23 4:59 PM,,,0,Register,"First and last names cannot have special
+
+Test data:
+
+“Abv“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,NC-45,NC-23,"- An error message ""First and last names cannot have numbers"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""First and last names cannot have numbers"" must shown",,,,,0|i001mf:,,NC Sprint 1,,,,,,,,System,- Enter a value in Fullname field.,Fail,,,,To Do
+Login,NC-27,10259,Epic,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 10:09 AM,08/Jan/23 1:43 PM,22/Mar/23 4:59 PM,,,0,,,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,,,,,,,,,,ghx-label-7,,,Login,To Do,,,purple,,,0|i001iv:,,,,,,,,,,,,,,,,To Do
+Register,NC-26,10258,Epic,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 10:08 AM,08/Jan/23 12:47 PM,05/Jan/23 12:39 PM,,,0,,,,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,,,,,,,,,,ghx-label-7,,,Register,To Do,,,purple,,,0|i001in:,,,,,,,,,,,,,,,,To Do
+SC-Verify Register - First and last names cannot have special,NC-23,10255,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 9:54 AM,05/Jan/23 2:26 PM,22/Mar/23 4:59 PM,,,0,Register,"First and last names cannot have special
+
+Test data:
+
+“Abv“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,NC-43,NC-21,"- An error message ""First and last name must be letters"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""First and last name must be letters"" must shown",,,,,0|i001hz:,,NC Sprint 1,,,,,,,,System,- Enter a value in Fullname field.,Pass,,,,To Do
+SC-Verify Register - First and last names cannot have numbers,NC-21,10253,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 9:49 AM,05/Jan/23 2:26 PM,22/Mar/23 4:59 PM,,,0,Register,"First and last names cannot have numbers
+
+Test data:
+
+“123213213”",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,NC-23,NC-19,"- An error message ""First and last names cannot have numbers"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""First and last names cannot have numbers"" must shown",,,,,0|i001hj:,,NC Sprint 1,,,,,,,,System,- Enter a value in Fullname field.,Fail,,,,To Do
+SC-Verify Register - Password must have capital letters,NC-19,10251,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 9:43 AM,05/Jan/23 2:35 PM,22/Mar/23 4:59 PM,,,0,Register,"{{Password must have capital letters}}
+
+Test data:
+
+“Abv“",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,NC-21,NC-15,"- An error message ""Password must have capital letters"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""Password must have capital letters"" must shown",,,,,0|i001h3:,,NC Sprint 1,,,,,,,,System,- Enter a value in Password field.,Pass,,,,To Do
+"IPRG07– Verify Telephone Number – If Telephone Number is invalid, System displays an error.",NC-17,10249,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,05/Jan/23 9:37 AM,08/Jan/23 12:39 PM,22/Mar/23 4:59 PM,,,0,Register," If Telephone Number is invalid, System displays an error.
+
+Enter Phone Number Registration = '#$'",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Error display system,,,,,,,,,,NC-26,Register,,,Error display system,,,,,0|i001gn:,,NC Sprint 1,,,,,,,,Integration,Enter the content in Phone Number Registration,Pass,,,,To Do
+"IPRG06 – Verify FullName – Nếu FullName không hợp lệ, Hệ thống sẽ hiển thị lỗi.",NC-16,10248,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,05/Jan/23 9:33 AM,07/Jan/23 10:43 PM,05/Jan/23 1:22 PM,,,0,Register," Nếu FullName không hợp lệ, Hệ thống sẽ hiển thị lỗi.
+
+Enter Fullname register = 'abc8#'",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Error display system,,,,,,,,,,NC-26,Register,,,Error display system,,,,,0|i001gf:,,NC Sprint 1,,,,,,,,Integration,Enter the content in FullName Registration,Pass,,,,To Do
+SC03-Verify Register -   Password must contain at least 1 special character,NC-15,10247,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 9:33 AM,05/Jan/23 2:26 PM,22/Mar/23 4:59 PM,,,0,Register,"Password must contain at least 1 special character
+
+Test data:
+
+“123abcg “",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,NC-19,,"- An error message ""Password must contain at least 1 special character"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""Password must contain at least 1 special character"" must shown",,,,,0|i001g7:,,NC Sprint 1,,,,,,,,System,- Enter a value in Password field.,Fail,,,,To Do
+SC02-Verify Register - First character can not have space,NC-14,10246,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 9:30 AM,05/Jan/23 2:26 PM,05/Jan/23 2:26 PM,,,0,Register,"First character can not have space
+
+Test data:
+
+“123abcg “",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,"- An error message ""First character can not have space"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""First character can not have space"" must shown",,,,,0|i001fz:,,NC Sprint 1,,,,,,,,System,- Enter a value in Password field.,Pass,,,,To Do
+"IPLG05 – Verify Password  Login – If Password is invalid, System displays an error.",NC-13,10245,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,05/Jan/23 9:26 AM,07/Jan/23 10:39 PM,22/Mar/23 4:59 PM,,,0,Login,"If Password is invalid, System displays an error.
+
+Enter  Password Login  = '1234'",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,Error display system,,,,,,,,,,NC-27,Login,,,Error display system,,,,,0|i001fr:,,NC Sprint 1,,,,,,,,Integration,Enter the content in Password Login ,Pass,,,,To Do
+"IPLG04 – Verify Email ID – If Email ID is invalid, System displays an error",NC-10,10242,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,05/Jan/23 9:16 AM,07/Jan/23 10:28 PM,22/Mar/23 4:59 PM,,,0,Login,"If Email ID is invalid, System displays an error
+
+Enter Email Login = ‘phamphuctoan2003434.com’",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,, System shows an error,,,,,,,,,,NC-27,Login,,, System shows an error,,,,,0|i001f3:,,NC Sprint 1,,,,,,,,Integration,Enter the content in Email Login,Pass,,,,To Do
+IPRG03 - Verify Name Registration - The first character in the account is a space,NC-9,10241,Bug,Open,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,05/Jan/23 9:11 AM,05/Jan/23 9:43 PM,05/Jan/23 9:46 PM,,,0,Register,"If the first letter of the first name is a space, the system will  report an error
+
+Enter Name Registration = '<khoảng trắng > abcdfg' ;",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,The system does not report an error,,,,,,,,,,NC-26,Register,,,The system does  report an error,,,,,0|i001ev:,,NC Sprint 1,,,,,,,,Integration,Enter the content in Name Registration,Pass,,,,To Do
+SC - Verify Register - First character can not have space,NC-8,10240,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,Phúc Võ Hồng,62983bae9bc7150068ce7717,05/Jan/23 9:02 AM,05/Jan/23 2:26 PM,05/Jan/23 2:31 PM,,,0,Register,"{{Email invalidate}}
+
+Test data:
+
+“123abc.com  “",,Phúc Võ Hồng,62983bae9bc7150068ce7717,,,,,,,,,,,"- An error message ""First character can not have space"" is shown",,,,,,,,,,NC-26,Register,,,"- An error message ""First character can not have space"" must shown",,,,,0|i001en:,,NC Sprint 1,,,,,,,,System,- Enter a value in Email field.,Pass,,,,To Do
+"IPRG02 - Verify Telephone - If same Telephone exist in the system, system shows an error",NC-6,10238,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,05/Jan/23 8:52 AM,06/Jan/23 1:43 PM,06/Jan/23 1:42 PM,,,0,NewAccount,"If same Telephone exist in the system, system shows an error
+
+Enter Telephone Field = ' 0947598771' ;",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,,System shows an error (This phone number is already in use!),,,,,,,,,,BAN-8,New Account,,,System shows an error,,,,,0|i001e7:,,NC Sprint 1,,,,,,,,Integration,"- Enter the content in Telephone Field and enter all until fields.
+- Submit
+- Continue Enter content of data in Telephonefield.
+- Submit",,,,,To Do
+"IPRG01 - Verify Name Registration - If same Email Id exist in the system, system shows an error",NC-3,10235,Story,To Do,NC,N1_CD21CT2,software,Cuong Do,629a01fe9bc7150068cf9d2f,,Medium,,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,Pham Toan,62995e1b658d5800688a1b61,05/Jan/23 8:41 AM,05/Jan/23 9:45 PM,06/Jan/23 1:41 PM,,,0,Register,"h1. If same Email Id exist in the system, system shows an error
+
+Enter Name Registration = 'abc123@gmail.com ' ;",,Pham Toan,62995e1b658d5800688a1b61,,,,,,,,,,, System shows an error (This email is already in use!),,,,,,,,,,NC-26,Register,,, System shows an error,,,,,0|i001dj:,,NC Sprint 1,,,,,,,,Integration,- Enter content of test data in Email Field.,,,,,To Do
