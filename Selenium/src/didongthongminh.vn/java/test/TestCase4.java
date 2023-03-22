@@ -31,6 +31,8 @@ public class TestCase4 {
         //  3. Thêm 2 sản phẩm vào danh sách so sánh
         Thread.sleep(1000);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector(".compare67030")))).click();
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(0, 500);");
         Thread.sleep(1000);
         driver.findElement(By.cssSelector(".compare67054 > span:nth-child(2)")).click();
 
