@@ -1,0 +1,1328 @@
+{
+	"info": {
+		"_postman_id": "fd6a882f-7a77-432c-a6f0-4294d6aeb24f",
+		"name": "API_DIDONGTHONGMINH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25630485"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Login & Register",
+					"item": [
+						{
+							"name": "GET Info Register",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.collectionVariables.set(\"name\", pm.response.json().data.name)\r",
+											"pm.collectionVariables.set(\"phone\", pm.response.json().data.phone)\r",
+											"pm.collectionVariables.set(\"email\", pm.response.json().data.email)\r",
+											"pm.collectionVariables.set(\"password\", pm.response.json().data.password)\r",
+											"pm.collectionVariables.set(\"address\", pm.response.json().data.address)"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/info",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==201){\r",
+											"    pm.collectionVariables.set(\"id_account\", pm.response.json().data.id)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"phone\": \"{{phone}}\",\r\n    \"email\": \"{{email}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==201){\r",
+											"    pm.collectionVariables.set(\"accessToken\", pm.response.json().data.access_token);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"{{email}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "GET All Account",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/auth/accounts",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Account With Email",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/auth/account/:email",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"account",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "{{email}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE Account",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Lư Hữu Đức Đã Cập Nhật\",\r\n    \"phone\": \"0332340187\",\r\n    \"password\": \"522003\",\r\n    \"address\": \"8/5 Vườn lài\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/account/:email",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"account",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "{{email}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE Account",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/auth/account/:email",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"account",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "{{email}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "GET Location",
+					"item": [
+						{
+							"name": "GET Locations",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==200){\r",
+											"    const index = Math.floor(Math.random() * pm.response.json().length);\r",
+											"    pm.collectionVariables.set(\"location\", pm.response.json().data.location[index].code)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Location with Code",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/location/:location",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"location",
+										":location"
+									],
+									"variable": [
+										{
+											"key": "location",
+											"value": "{{location}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "ADD Location",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==201){\r",
+											"    pm.collectionVariables.set(\"location_new\", pm.response.json().data.code)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"DN\",\r\n    \"content\": \"Đà Nẵng\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/add_location",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"add_location"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE Location",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==200){\r",
+											"    pm.collectionVariables.set(\"location_new\", pm.response.json().data.location.code)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"DN đã sửa\",\r\n    \"content\": \"Đà Nẵng\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/location/:code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"location",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "code",
+											"value": "{{location_new}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE Location",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/auth/location/:code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"location",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "code",
+											"value": "{{location_new}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Store",
+			"item": [
+				{
+					"name": "GET Store",
+					"item": [
+						{
+							"name": "GET Store",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==200){\r",
+											"    const index = Math.floor(Math.random() * pm.response.json().data.store.length)\r",
+											"    pm.collectionVariables.set(\"store\", pm.response.json().data.store[index].code)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/stores",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"stores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Store With Location",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/store/location/:location",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"store",
+										"location",
+										":location"
+									],
+									"variable": [
+										{
+											"key": "location",
+											"value": "{{location}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Store With Code",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/store/code/:code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"store",
+										"code",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "code",
+											"value": "{{store}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Store With Location & Code",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/store/:location/:code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"store",
+										":location",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "location",
+											"value": "{{location}}"
+										},
+										{
+											"key": "code",
+											"value": "{{store}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "ADD Store",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status == 201){\r",
+											"    pm.collectionVariables.set(\"store_new\", pm.response.json().data.code)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"location\": \"HCM\",\r\n    \"name\": \"DI ĐỘNG THÔNG MINH - TÂN PHÚ\",\r\n    \"code\": \"TP\",\r\n    \"address\": \"8/5 Vườn Lài, Tân Phú, Hồ Chí Minh\",\r\n    \"phone\": \"0332340187\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/store/add_store",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"store",
+										"add_store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"location\": \"HCM\",\r\n    \"name\": \"DI ĐỘNG THÔNG MINH - TÂN PHÚ (Đã update)\",\r\n    \"code\": \"TP\",\r\n    \"address\": \"8/5 Vườn Lài, Tân Phú, Hồ Chí Minh\",\r\n    \"phone\": \"0332340187\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/store/:code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"store",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "code",
+											"value": "{{store_new}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/auth/store/:code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"store",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "code",
+											"value": "{{store_new}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "GET Product",
+					"item": [
+						{
+							"name": "GET All Products",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==200){\r",
+											"    const index = Math.floor(Math.random() * pm.response.json().data.length)\r",
+											"    pm.collectionVariables.set(\"id_product\", pm.response.json().data[index].id)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Product With ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==200){\r",
+											"    const index_v = Math.floor(Math.random() * pm.response.json().data.version.length)\r",
+											"    pm.collectionVariables.set(\"version\", pm.response.json().data.version[index_v].storage)\r",
+											"\r",
+											"    const list_c = pm.response.json().data.color.filter(item => item.storage == pm.response.json().data.version[index_v].storage)\r",
+											"\r",
+											"    const index_c = Math.floor(Math.random() * list_c.length)\r",
+											"    pm.collectionVariables.set(\"color\", list_c[index_c].color)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/product/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{id_product}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Product With Location",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/product/location/:location",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"product",
+										"location",
+										":location"
+									],
+									"variable": [
+										{
+											"key": "location",
+											"value": "{{location}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Product With Location & ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/product/location/:location/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"product",
+										"location",
+										":location",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "location",
+											"value": "{{location}}"
+										},
+										{
+											"key": "id",
+											"value": "{{id_product}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Product With Store",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/product/store/:store",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"product",
+										"store",
+										":store"
+									],
+									"variable": [
+										{
+											"key": "store",
+											"value": "{{store}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Product With Store & ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/product/store/:store/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"product",
+										"store",
+										":store",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "store",
+											"value": "{{store}}"
+										},
+										{
+											"key": "id",
+											"value": "{{id_product}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "ADD Product",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status==201){\r",
+											"    pm.collectionVariables.set(\"id_product_new\", pm.response.json().data.id)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n      \"name\": \"Iphone Xs Max Cũ 64GB Nguyên Bản Đẹp như mới\",\r\n      \"category\": \"phone\",\r\n      \"brand\": \"apple\",\r\n      \"branch\": [\"DD\", \"Q10\"],\r\n      \"version\": [\r\n        {\r\n          \"id\": 1,\r\n          \"price\": 6990000,\r\n          \"quantity\": 0,\r\n          \"storage\": \"64GB\",\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"id\": 2,\r\n          \"price\": 8990000,\r\n          \"quantity\": 0,\r\n          \"storage\": \"256GB\",\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"id\": 3,\r\n          \"price\": 9690000,\r\n          \"quantity\": 0,\r\n          \"storage\": \"512GB\",\r\n          \"isSelect\": false\r\n        }\r\n      ],\r\n      \"image\": [\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"img\": [\"img1.png\", \"img2.png\", \"img3.png\"]\r\n        },\r\n        {\r\n          \"storage\": \"256GB\",\r\n          \"img\": [\"img4.png\", \"img5.png\", \"img6.png\"]\r\n        },\r\n        {\r\n          \"storage\": \"512GB\",\r\n          \"img\": [\"img7.png\", \"img8.png\", \"img9.png\", \"img10.png\"]\r\n        }\r\n      ],\r\n      \"color\": [\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 50,\r\n          \"color\": \"Vàng\",\r\n          \"status\": \"99.6%\",\r\n          \"price\": 7990000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 70,\r\n          \"color\": \"Xám\",\r\n          \"status\": \"99.6%\",\r\n          \"price\": 7690000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 100,\r\n          \"color\": \"Bạc\",\r\n          \"status\": \"99.6%\",\r\n          \"price\": 7890000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 10,\r\n          \"color\": \"\",\r\n          \"status\": \"Đẹp 98.9%\",\r\n          \"price\": 7390000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": \"Out of stock\",\r\n          \"color\": \"\",\r\n          \"status\": \"Đẹp 97.9%\",\r\n          \"price\": 6990000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 20,\r\n          \"color\": \"\",\r\n          \"status\": \"Trưng Bày\",\r\n          \"price\": 8190000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"256GB\",\r\n          \"quantity\": 30,\r\n          \"color\": \"Xám\",\r\n          \"status\": \"New\",\r\n          \"price\": 8990000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"256GB\",\r\n          \"quantity\": 20,\r\n          \"color\": \"Bạc\",\r\n          \"status\": \"New\",\r\n          \"price\": 9190000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"256GB\",\r\n          \"quantity\": 50,\r\n          \"color\": \"Vàng\",\r\n          \"status\": \"New\",\r\n          \"price\": 9190000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"512GB\",\r\n          \"quantity\": 10,\r\n          \"color\": \"Trắng\",\r\n          \"status\": \"New\",\r\n          \"price\": 9690000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"512GB\",\r\n          \"quantity\": \"Out of stock\",\r\n          \"color\": \"Vàng\",\r\n          \"status\": \"New\",\r\n          \"price\": 9990000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"512GB\",\r\n          \"quantity\": \"Out of stock\",\r\n          \"color\": \"Xám\",\r\n          \"status\": \"New\",\r\n          \"price\": 9690000,\r\n          \"isSelect\": false\r\n        }\r\n      ],\r\n      \"option\": [],\r\n      \"sale\": 0,\r\n      \"warranty\": [\r\n        \"Bảo hành 6 tháng toàn diện\",\r\n        \"Bảo hành toàn diện cả nguồn, màn hình và vân tay\",\r\n        \"1 đổi 1 trong 30 ngày nếu máy lỗi từ nhà sản xuất\"\r\n      ],\r\n      \"promotion\": [\r\n        \"Tặng sạc, cable 20W chính hãng\",\r\n        \"Hỗ trợ trả góp duyệt hồ sơ nhanh qua thẻ tín dụng\",\r\n        \"Giảm lên tới 500,000vnđ khi thanh toán qua Kredivo\",\r\n        \"Tặng ốp lưng thời trang trị giá 150,000vnđ\"\r\n      ],\r\n      \"status\": [\r\n        \"Máy nguyên bản, đẹp như mới 97-99%.\",\r\n        \"Máy 97% có cấn, móp dễ thấy.\",\r\n        \"Máy 98% có xước, cấn, tổng quan đẹp.\",\r\n        \"Máy 99% đẹp như mới xước nhỏ vị trí khó thấy.\",\r\n        \"Máy trưng bày đẹp như mới không tì vết.\",\r\n        \"Dung lượng Pin zin trên 84%.\",\r\n        \"Giá hàng 97,98% là màu xám (Trắng +200 ngàn, Vàng + 300 ngàn).\"\r\n      ],\r\n      \"gift\": [],\r\n      \"specifications\": {\r\n        \"sim_band\": \"2G/3G, LTE\",\r\n        \"screen\": \"6.5 Super Retina HD\",\r\n        \"cpu\": \"Apple A12 Bionic\",\r\n        \"ram\": \"4GB\",\r\n        \"memory\": \"256GB\",\r\n        \"rear_camera\": \"Dual 12 MP\",\r\n        \"front_camera\": \"7.0 MP\",\r\n        \"sim\": \"Dual SIM (nano-SIM and eSIM)\",\r\n        \"sensor\": \"Face ID, Barometer, Three‑axis gyro, Accelerometer, Proximity sensor, Ambient light sensor\",\r\n        \"security\": \"FaceID\",\r\n        \"pin\": \"Li-Ion 3174 mAh\",\r\n        \"color\": \"Bạc, Vàng, Xám\",\r\n        \"status\": \"Used\"\r\n      },\r\n      \"desc\": \"Hiện nay, iPhone Xs Max cũ giá rẻ, thiết kế đẹp nên vẫn được nhiều bạn quan tâm, săn lùng. Vậy iPhone Xs Max cũ ở thời điểm hiện tại này đang có mức giá như thế nào và cấu hình ra sao? Cùng Di Động Thông Minh đọc ngay bài viết dưới đây!\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/product/add_product",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"product",
+										"add_product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n      \"name\": \"Iphone Xs Max Cũ 64GB Nguyên Bản Đẹp như mới (ĐÃ CẬP NHẬT)\",\r\n      \"category\": \"phone\",\r\n      \"brand\": \"apple\",\r\n      \"branch\": [\"CG\", \"Q10\"],\r\n      \"version\": [\r\n        {\r\n          \"id\": 1,\r\n          \"price\": 6990000,\r\n          \"quantity\": 0,\r\n          \"storage\": \"64GB\",\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"id\": 2,\r\n          \"price\": 8990000,\r\n          \"quantity\": 0,\r\n          \"storage\": \"256GB\",\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"id\": 3,\r\n          \"price\": 9690000,\r\n          \"quantity\": 0,\r\n          \"storage\": \"512GB\",\r\n          \"isSelect\": false\r\n        }\r\n      ],\r\n      \"image\": [\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"img\": [\"img1.png\", \"img2.png\", \"img3.png\"]\r\n        },\r\n        {\r\n          \"storage\": \"256GB\",\r\n          \"img\": [\"img4.png\", \"img5.png\", \"img6.png\"]\r\n        },\r\n        {\r\n          \"storage\": \"512GB\",\r\n          \"img\": [\"img7.png\", \"img8.png\", \"img9.png\", \"img10.png\"]\r\n        }\r\n      ],\r\n      \"color\": [\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 50,\r\n          \"color\": \"Vàng\",\r\n          \"status\": \"99.6%\",\r\n          \"price\": 7990000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 70,\r\n          \"color\": \"Xám\",\r\n          \"status\": \"99.6%\",\r\n          \"price\": 7690000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 100,\r\n          \"color\": \"Bạc\",\r\n          \"status\": \"99.6%\",\r\n          \"price\": 7890000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 10,\r\n          \"color\": \"\",\r\n          \"status\": \"Đẹp 98.9%\",\r\n          \"price\": 7390000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": \"Out of stock\",\r\n          \"color\": \"\",\r\n          \"status\": \"Đẹp 97.9%\",\r\n          \"price\": 6990000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"64GB\",\r\n          \"quantity\": 20,\r\n          \"color\": \"\",\r\n          \"status\": \"Trưng Bày\",\r\n          \"price\": 8190000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"256GB\",\r\n          \"quantity\": 30,\r\n          \"color\": \"Xám\",\r\n          \"status\": \"New\",\r\n          \"price\": 8990000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"256GB\",\r\n          \"quantity\": 20,\r\n          \"color\": \"Bạc\",\r\n          \"status\": \"New\",\r\n          \"price\": 9190000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"256GB\",\r\n          \"quantity\": 50,\r\n          \"color\": \"Vàng\",\r\n          \"status\": \"New\",\r\n          \"price\": 9190000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"512GB\",\r\n          \"quantity\": 10,\r\n          \"color\": \"Trắng\",\r\n          \"status\": \"New\",\r\n          \"price\": 9690000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"512GB\",\r\n          \"quantity\": \"Out of stock\",\r\n          \"color\": \"Vàng\",\r\n          \"status\": \"New\",\r\n          \"price\": 9990000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"storage\": \"512GB\",\r\n          \"quantity\": \"Out of stock\",\r\n          \"color\": \"Xám\",\r\n          \"status\": \"New\",\r\n          \"price\": 9690000,\r\n          \"isSelect\": false\r\n        }\r\n      ],\r\n      \"option\": [\r\n        {\r\n          \"content\": \"Pin từ 83-89% - Pin nguyên bản\",\r\n          \"price\": 0,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"content\": \"Chọn Pin nguyên bản trên 90% (+300,000đ)\",\r\n          \"price\": 300000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"content\": \"Chọn Pin 100% nguyên bản (+600,000đ)\",\r\n          \"price\": 600000,\r\n          \"isSelect\": false\r\n        },\r\n        {\r\n          \"content\": \"Chọn Pin 100% thay mới (+400,000đ)\",\r\n          \"price\": 400000,\r\n          \"isSelect\": false\r\n        }\r\n      ],\r\n      \"sale\": 0,\r\n      \"warranty\": [\r\n        \"Bảo hành 6 tháng toàn diện\",\r\n        \"Bảo hành toàn diện cả nguồn, màn hình và vân tay\",\r\n        \"1 đổi 1 trong 30 ngày nếu máy lỗi từ nhà sản xuất\"\r\n      ],\r\n      \"promotion\": [\r\n        \"Tặng sạc, cable 20W chính hãng\",\r\n        \"Hỗ trợ trả góp duyệt hồ sơ nhanh qua thẻ tín dụng\",\r\n        \"Giảm lên tới 500,000vnđ khi thanh toán qua Kredivo\",\r\n        \"Tặng ốp lưng thời trang trị giá 150,000vnđ\"\r\n      ],\r\n      \"status\": [\r\n        \"Máy nguyên bản, đẹp như mới 97-99%.\",\r\n        \"Máy 97% có cấn, móp dễ thấy.\",\r\n        \"Máy 98% có xước, cấn, tổng quan đẹp.\",\r\n        \"Máy 99% đẹp như mới xước nhỏ vị trí khó thấy.\",\r\n        \"Máy trưng bày đẹp như mới không tì vết.\",\r\n        \"Dung lượng Pin zin trên 84%.\",\r\n        \"Giá hàng 97,98% là màu xám (Trắng +200 ngàn, Vàng + 300 ngàn).\"\r\n      ],\r\n      \"gift\": [\r\n        {\r\n          \"id_product\": 1\r\n        },\r\n        {\r\n          \"id_product\": 2\r\n        }\r\n      ],\r\n      \"specifications\": {\r\n        \"sim_band\": \"2G/3G, LTE\",\r\n        \"screen\": \"6.5 Super Retina HD\",\r\n        \"cpu\": \"Apple A12 Bionic\",\r\n        \"ram\": \"4GB\",\r\n        \"memory\": \"256GB\",\r\n        \"rear_camera\": \"Dual 12 MP\",\r\n        \"front_camera\": \"7.0 MP\",\r\n        \"sim\": \"Dual SIM (nano-SIM and eSIM)\",\r\n        \"sensor\": \"Face ID, Barometer, Three‑axis gyro, Accelerometer, Proximity sensor, Ambient light sensor\",\r\n        \"security\": \"FaceID\",\r\n        \"pin\": \"Li-Ion 3174 mAh\",\r\n        \"color\": \"Bạc, Vàng, Xám\",\r\n        \"status\": \"Used\"\r\n      },\r\n      \"desc\": \"Hiện nay, iPhone Xs Max cũ giá rẻ, thiết kế đẹp nên vẫn được nhiều bạn quan tâm, săn lùng. Vậy iPhone Xs Max cũ ở thời điểm hiện tại này đang có mức giá như thế nào và cấu hình ra sao? Cùng Di Động Thông Minh đọc ngay bài viết dưới đây!\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/product/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{id_product_new}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/auth/product/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{id_product_new}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bill",
+			"item": [
+				{
+					"name": "Purchase",
+					"item": [
+						{
+							"name": "Purchase",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if(pm.response.json().status == 201){\r",
+											"    pm.collectionVariables.set(\"bill\", pm.response.json().data.id)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"location\": \"{{location}}\",\r\n    \"store\": \"{{store}}\",\r\n    \"id_account\": \"{{id_account}}\",\r\n    \"id_product\": \"{{id_product}}\",\r\n    \"quantity\": 2,\r\n    \"version\": \"{{version}}\",\r\n    \"color\": \"{{color}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/purchase",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"purchase"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "GET All Bill",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/auth/bills",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"bills"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE Bill",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/auth/bill/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"bill",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{bill}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000"
+		},
+		{
+			"key": "name_account",
+			"value": ""
+		},
+		{
+			"key": "phone_account",
+			"value": ""
+		},
+		{
+			"key": "access_token",
+			"value": ""
+		},
+		{
+			"key": "id_account",
+			"value": ""
+		},
+		{
+			"key": "name",
+			"value": ""
+		},
+		{
+			"key": "phone",
+			"value": ""
+		},
+		{
+			"key": "email",
+			"value": ""
+		},
+		{
+			"key": "password",
+			"value": ""
+		},
+		{
+			"key": "address",
+			"value": ""
+		},
+		{
+			"key": "code",
+			"value": ""
+		},
+		{
+			"key": "location",
+			"value": ""
+		},
+		{
+			"key": "store",
+			"value": ""
+		},
+		{
+			"key": "id_product",
+			"value": ""
+		},
+		{
+			"key": "id_product_new",
+			"value": ""
+		},
+		{
+			"key": "version",
+			"value": ""
+		},
+		{
+			"key": "color",
+			"value": ""
+		},
+		{
+			"key": "option",
+			"value": ""
+		},
+		{
+			"key": "bill",
+			"value": ""
+		},
+		{
+			"key": "location_new",
+			"value": ""
+		},
+		{
+			"key": "store_new",
+			"value": ""
+		},
+		{
+			"key": "accessToken",
+			"value": ""
+		},
+		{
+			"key": "email_product_new",
+			"value": ""
+		}
+	]
+}
