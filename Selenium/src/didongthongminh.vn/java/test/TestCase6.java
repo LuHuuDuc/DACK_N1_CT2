@@ -77,5 +77,7 @@ public class TestCase6 {
         note.sendKeys("Dạ em test, anh chị thông cảm.");
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("#cod-btn")))).click();
 
+        driver.quit();
+
     }
 }
