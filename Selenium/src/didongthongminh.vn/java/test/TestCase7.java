@@ -45,5 +45,7 @@ public class TestCase7 {
 
         //  8. *** note: the link was not found.
         // Click 'Change...' link and a popup will be opened as 'Select a destination' , select 'Save as PDF' link.
+        
+        driver.quit();
     }
 }
