@@ -47,5 +47,7 @@ public class TestCase1 {
         Collections.sort(sortedProductNames, String.CASE_INSENSITIVE_ORDER);
         assertEquals(productNames, sortedProductNames);
         // Lý do bị false: Kết quả sắp xếp theo bảng chữ cái không khớp.
+        
+        driver.quit();
     }
 }
