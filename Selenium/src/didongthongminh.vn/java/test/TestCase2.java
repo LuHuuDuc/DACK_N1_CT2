@@ -36,6 +36,6 @@ public class TestCase2 {
         // 4. Chọn một sản phẩm bất kì
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("div.col-sm-5ths:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > div:nth-child(3)")))).click();
 
-
+        driver.quit();
     }
 }
